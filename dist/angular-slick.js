@@ -165,7 +165,7 @@ angular
               $timeout(function () {
                 angular.element(element).css('display', 'block');
                 slickness.not('.slick-initialized').slick(options);
-              });
+              }, 1000);
             }
 
             scope.internalControl = options.method || {};
